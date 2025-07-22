@@ -1,0 +1,35 @@
+[project]
+name = "anvil-framework"
+version = "0.1.0"
+description = "Anvil: An Agentic Framework for AI Benchmarking."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = [
+    "google-generativeai",
+    "numpy",
+    "pandas"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+
+# Add new dependencies for API and workers
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.1"}
+celery = "^5.4.0"
+redis = "^5.0.7"
+psycopg2-binary = "^2.9.9"
+sqlalchemy = "^2.0.31"
+python-dotenv = "^1.0.1"

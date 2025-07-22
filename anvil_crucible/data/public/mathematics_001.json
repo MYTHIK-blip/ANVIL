@@ -1,0 +1,11 @@
+{
+  "id": "math_001",
+  "subject": "Mathematics",
+  "difficulty": "Graduate",
+  "modality": "text",
+  "question": "Prove that the Diophantine equation x² + y² = z³ has infinitely many non-trivial integer solutions, providing a general form.",
+  "answer": {
+    "type": "short_text_exact",
+    "value": "Parametric solution: x=a(a²-3b²), y=b(3a²-b²), z=a²+b² for integers a,b."
+  }
+}
